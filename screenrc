@@ -1,9 +1,13 @@
 ################################################
 # ~/.screenrc
+# 
+#
+# Thanks to Georg Buske (georg [a] georgbuske.de) for sharing with me his .screenrc files.
+# All I did was translating some phrases to English for better understanding.
 ################################################
 
 # =======================================================
-#       VARIABLEN
+#       Variables
 # =======================================================
 autodetach            on              # Standard: on
 crlf                  off             # Standard: off
@@ -108,23 +112,24 @@ bind v screen -t 'vim'     4 vim
 
 
 # ===========================================
-#       CAPTION
+#       caption
 # ===========================================
 
-# einstellbare berschrift der Screenleiste
+# configurable headline of screenline
 caption always "%{kG}%?%-Lw%?%{bw}%n*%f %t%?(%u)%?%{kG}%?%+Lw%?"
 
 # ===========================================
-#       HARDSTATUS
+#       hardware status
 # ===========================================
-# Statusanzeige von Screen, in dem Fall homepage -- hostname -- time
+# statusline of screen, in every case: Homepage - hostname - time 
 
 hardstatus alwayslastline "%{BW}$USER%50=%{RY}host: %H %85=%{YR}%M%d %92=%{Gb}%c%="
 sorendition    kG # black  on bold green
 
-# setzen eines screen passworts
+# set a screen passoword (uncomment next line)
 # password lala
-# screen farben:
+
+# screen colors:
 # 0 Black             .    leave color unchanged
 # 1 Red               b    blue
 # 2 Green             c    cyan
